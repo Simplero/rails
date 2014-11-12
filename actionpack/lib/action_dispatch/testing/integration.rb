@@ -339,6 +339,7 @@ module ActionDispatch
             @html_document = nil
             reset_template_assertion
           end
+
           integration_session.__send__(method, *args).tap do
             copy_session_variables!
           end
